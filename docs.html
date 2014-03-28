@@ -1,0 +1,157 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Precision Pop Out - Documentation</title>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+
+    <script src="js/jquery.hide-show.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#showHide1').hideShow({
+                buttonID: 'button1'
+            });
+            $('#showHide2').hideShow({
+                buttonID: 'button2'
+            });
+            $('#footer').hideShow({
+                buttonID: 'footerBtn'
+            });
+        });
+    </script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 30px;
+            font-family: "Source Sans Pro";
+            font-weight: 100;
+        }
+        #container {
+            padding: 20px;
+            text-align: center;
+            width: ;
+        }
+        h1 {
+            margin: 20px 0 40px;
+        }
+        h2 {
+            text-align: left;
+            margin: 20px 0;
+            clear: both;
+        }
+        h3 {
+            text-align: left;
+            clear: both;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .btn {
+            float: left;
+            width: auto;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            background: #116ff7;
+            margin: 0 20px;
+            font-size: 15px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .show {
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            background: red;
+            float: left;
+            margin: 10px 20px;
+            line-height: 100px;
+            text-align: center;
+        }
+        #showHide1 {
+            clear: left;
+        }
+        #showHide2 {
+            background: green;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            background: #ddd;
+            text-align: center;
+            line-height: 100px;
+        }
+        #footerBtn {
+            clear: right;
+        }
+        pre {
+            font-size: 15px;
+            text-align: left;
+            clear: both;
+        }
+        p {
+            text-align: left;
+            clear: both;
+        }
+        #banners {
+            width: 100%;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="container">
+    <h1>Precision Hide/Show Plugin</h1>
+    <div id="button1" class="btn">Click to Hide 1</div>
+    <div id="button2" class="btn">Click to Hide 2</div>
+    <div id="footerBtn" class="btn">Click to Hide Footer</div>
+
+    <div id="banners">
+        <div id="showHide1" class="show">1</div>
+        <div id="showHide2" class="show">2</div>
+    </div>
+    <h2><strong>Instructions:</strong></h2>
+    <h3>Include the latest version of jQuery in the head tag as well as the plugin.</h3>
+            <pre>
+                &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"&gt;&lt;/script&gt;
+                &lt;script src="js/jquery.hide-show.js"&gt;&lt;/script&gt;
+
+            </pre>
+
+    <h3>Invoke the plugin on whatever you want to encapsulate in a pop out like so. Just put in the ID or
+        Class of the html tag you are encapsulating. You don't have to include all of the options,
+        but they are there to customize your pop out.</h3>
+            <pre>
+                &lt;script&gt;
+                    $('#showHide1').hideShow({ //=Invoke the plugin on the ID of the element you want to hide and show
+                        buttonID: 'button1' //=ID of the element you would like to use as the button
+                    });
+                &lt;/script&gt;
+            </pre>
+</div>
+
+
+
+
+
+
+</div>
+<div id="footer">Footer</div>
+
+</body>
+</html>
